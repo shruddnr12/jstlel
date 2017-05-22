@@ -17,6 +17,12 @@ public class _02Servlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		int iVal = 10;
+		float fVal = 3.14f;
+		
+		request.setAttribute( "iVal", iVal );
+		request.setAttribute( "fVal", fVal );
+		
 		request.getRequestDispatcher( "/view/02.jsp" ).forward( request, response );
 	}
 }

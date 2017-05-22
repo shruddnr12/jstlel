@@ -7,6 +7,17 @@
 </head>
 <body>
 	<h3>연산</h3>
-
+	${iVal * 10 + 100 }
+	<br>
+	${iVal * 10 <= fVal*2 }
+	<br>
+	${iVal * 10 <= fVal*2 && fVal == iVal*2 }
+	<br>	
+	${empty myVal }
+	<br>	
+	${not empty myVal }
+	
+	
+	
 </body>
 </html>

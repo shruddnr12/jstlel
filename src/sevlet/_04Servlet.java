@@ -20,6 +20,22 @@ public class _04Servlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		MemberVo vo2 = new MemberVo();
+		vo2.setNo( 2L );
+		vo2.setEmail( "kickscar2@gmail.com" );
+		request.setAttribute( "vo2", vo2 );
+
+		MemberVo vo3 = new MemberVo();
+		vo3.setNo( 3L );
+		vo3.setEmail( "kickscar3@gmail.com" );
+		request.setAttribute( "vo3", vo3 );
+		request.getSession( true ).setAttribute( "vo3", vo3 );
+
+		MemberVo vo4 = new MemberVo();
+		vo4.setNo( 4L );
+		vo4.setEmail( "kickscar3@gmail.com" );
+		request.getServletContext().setAttribute( "vo4", vo4 );
+		
 		request.getRequestDispatcher( "/view/04.jsp" ).forward( request, response );
 	}
 }

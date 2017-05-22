@@ -16,6 +16,19 @@ public class _01Servlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		int iVal = 10;
+		float fVal = 3.14f;
+		boolean bVal = true;
+		String sVal = "Hello World";
+		Object nullVal = null;
+		
+		request.setAttribute( "iValue", iVal );
+		request.setAttribute( "fValue", fVal );
+		request.setAttribute( "bValue", bVal );
+		request.setAttribute( "sValue", sVal );
+		request.setAttribute( "nullValue", nullVal );
+		
+		
 		request.getRequestDispatcher( "/view/01.jsp" ).forward( request, response );
 	}
 }

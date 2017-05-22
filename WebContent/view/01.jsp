@@ -7,7 +7,18 @@
 </head>
 <body>
 	<h3>데이터 형</h3>
-
+	${iValue }
+	<br>
+	${fValue }
+	<br>
+	${bValue }
+	<br>
+	${sValue }
+	<br>
+	----${nullValue }---
+	<br>
+	----${myValue }---
+	<br>
 	
 </body>
 </html>
